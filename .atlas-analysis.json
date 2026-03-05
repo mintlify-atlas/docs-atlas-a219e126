@@ -1,0 +1,138 @@
+{
+  "projectType": "saas",
+  "projectName": "APTIV Scrap Control",
+  "projectDescription": "Manufacturing scrap tracking and analysis system for APTIV production facilities with real-time monitoring, role-based access control, and comprehensive reporting.",
+  "theme": "aspen",
+  "primaryColor": "#E4002B",
+  "lightColor": "#2563eb",
+  "darkColor": "#059669",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/scrap-registration",
+              "features/dashboard-analytics",
+              "features/barcode-scanning",
+              "features/role-permissions"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/deployment",
+              "guides/user-management",
+              "guides/catalog-management",
+              "guides/reporting",
+              "guides/tolerances",
+              "guides/backup-restore"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/database-schema",
+              "architecture/frontend",
+              "architecture/backend"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Authentication",
+            "pages": [
+              "api/auth"
+            ]
+          },
+          {
+            "group": "Catalogs",
+            "pages": [
+              "api/catalogs/areas",
+              "api/catalogs/catnp",
+              "api/catalogs/fallas",
+              "api/catalogs/turnos",
+              "api/catalogs/cadenas",
+              "api/catalogs/lineas",
+              "api/catalogs/categorias",
+              "api/catalogs/unidades",
+              "api/catalogs/roles"
+            ]
+          },
+          {
+            "group": "Scrap Management",
+            "pages": [
+              "api/scrap"
+            ]
+          },
+          {
+            "group": "Reports",
+            "pages": [
+              "api/reports"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "api/users",
+              "api/tolerances",
+              "api/audit",
+              "api/backup"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Real-time scrap registration with barcode scanner support",
+    "Interactive dashboards with charts and trend analysis",
+    "Role-based access control with granular permissions",
+    "Comprehensive reporting by area, shift, chain, and category",
+    "Tolerance management with automatic alerts",
+    "Complete audit trail and backup/restore functionality",
+    "Multi-shift support with configurable schedules",
+    "CSV import/export for catalogs and data migration"
+  ],
+  "publicApiSurface": [
+    "POST /api/auth/login - User authentication",
+    "GET/POST /api/catalogs/areas - Area catalog management",
+    "GET/POST /api/catalogs/catnp - Part number catalog",
+    "GET/POST /api/catalogs/fallas - Failure modes catalog",
+    "GET/POST /api/catalogs/turnos - Shifts catalog",
+    "GET/POST /api/catalogs/cadenas - Production chains",
+    "GET/POST /api/catalogs/lineas - Production lines",
+    "GET/POST /api/catalogs/categorias - Scrap categories",
+    "GET/POST /api/catalogs/unidades - Units of measure",
+    "GET/POST /api/catalogs/roles - User roles",
+    "GET/POST/PUT/DELETE /api/scrap - Scrap records CRUD",
+    "GET /api/reports/summary - Summary statistics",
+    "GET /api/reports/by-area - Scrap by area report",
+    "GET /api/reports/by-category - Scrap by category report",
+    "GET /api/reports/by-turno - Scrap by shift report",
+    "GET /api/reports/top-parts - Top scrap parts",
+    "GET /api/reports/top-fallas - Top failure modes",
+    "GET /api/reports/trend - Daily trend analysis",
+    "GET /api/reports/by-cadena - Scrap by chain report",
+    "GET/POST/PUT /api/users - User management",
+    "GET/POST/PUT/DELETE /api/tolerances - Tolerance configuration",
+    "GET /api/audit - Audit log access",
+    "GET /api/backup/export - Data backup export",
+    "POST /api/backup/import - Data backup import",
+    "GET /api/health - API health check"
+  ]
+}
